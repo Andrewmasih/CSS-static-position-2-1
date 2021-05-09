@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Static elements</title>
+    <style>
+      div {
+        width:  100px;
+        height: 100px;
+        margin: 10px;
+        /* Left, top, right,
+        bottom and z-index
+        are not aplicable
+        to static elements */
+        left: 300px;
+        top: 200px;
+        right: 300px;
+        bottom:  100px;
+      }
+      .one {
+        /* Uncomment this bottom line
+        to see what happens with the
+        black rectangular */
+        position: relative;
+        background-color: #000;
+      }      
+
+      .two {
+        background-color: #bada55;
+      }      
+
+      .three {
+        background-color:  #0ff;
+      }    
+
+    </style>
+  </head>
+  <body>
+    <!-- All elements are positioned static by default
+    which mean they sit on top of each other  -->
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>
